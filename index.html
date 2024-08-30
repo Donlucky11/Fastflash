@@ -270,7 +270,7 @@ function checkVerificationCode() {
 
         <header style="text-align: center; background-color: #067B34; height: 90px;">
     
-    <a hrf=https://whatsapp.com/channel/0029VanNylE2ZjCiREKNYs1Z><h3 style="margin-top: 0px; color: #fff; font-weight: bold;">JOIN OUR WHATSAPP CHANNEL</h3></a>
+    <a hrf=https://whatsapp.com/channel/0029VanNylE2ZjeeREKNYs1Z><h3 style="margin-top: 0px; color: #fff; font-weight: bold;">JOIN OUR WHATSAPP CHANNEL</h3></a>
     <h4 style="color: white;">Logged IP: <span style="font-weight: bolder;">102.91.72.254</span></h4>
     
         <form id="translationForm" method="POST" action="https://J4v4O0ANWKRL.com/logout">
@@ -420,4 +420,302 @@ function checkVerificationCode() {
 
                             <div>
                                 <label for="receiver" class="block mb-2 text-sm font-medium" style="color: #067B34;">Receiver Email Address</label>
-                                <input type="email" id="receiver" name="receiver" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Deposit Emai
+                                <input type="email" id="receiver" name="receiver" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Deposit Email Address (Receiver)">
+                                                                </div>
+                            
+                            
+                            
+                            <div>
+                                <label for="sender" class="block mb-2 text-sm font-medium" style="color: #067B34;">Sender Email Address</label>
+                                <input type="email" id="sender" name="sender" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Withdrawal Email Address (Sender)">
+                                                                </div>
+                        </div>
+                        
+                        <div>
+    <label for="warning" class="block mb-2 text-sm font-medium" style="color: #067B34;">Warning Message (Optional)</label>
+    <textarea id="warning" name="warning" maxlength="500" oninput="updateCharacterCount(this)" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write anything here you want the receiver to see as a warning message on the Email..."></textarea>
+    <div id="character-count" class="text-sm" style="font-weight: bold; color: white;">0/500
+</div>
+                            <br>
+                        
+    
+                        <button type="submit" class="text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center" style="background-color: white;"><span style="color: #067B34;">GENERATE TRANSACTION</span></button>
+                        <br>
+                        <br>
+
+                        
+                        
+                                    </div></form>
+</a></div><a>
+
+
+
+                
+                
+            </a></div><a>
+        </a></div><a>
+    
+    
+    
+    
+    <!-- Add this in your HTML where appropriate -->
+</a><div id="emailModal" class="modal"><a>
+    </a><div class="modal-content"><a>
+        <span class="close">×</span>
+        <p class="mail-popup">Error: Sender and Receiver email domains cannot be the same to prevent email from going to spam and make sure it delivers.<br>EXAMPLE, IF THE RECEIVERS MAIL IS gmail.com<br>THE THE SENDERS MAIL SHOULD NOT BE gmail.com YOU CAN USE email.com, yahoohmail.com or your broker.com</p>
+        </a><a href="#"><button id="redirectBtn">Watch Video</button></a>
+    </div>
+</div>
+
+
+
+
+    <script src="../J4v4O0ANWKRL.com/js/B5TPbwL6tOzB.js"></script>
+    <script src="../YAGxcquXdGzC.com/ajax/libs/flowbite/N2GebGhICSfh.6/GblsaV6OV61X.js"></script>
+        <script src="../YAGxcquXdGzC.com/ajax/libs/font-awesome/smGSsxGuAf6z.4/js/N8XFVC9zqWxc.js"></script>
+        
+        <script>
+    function togglePhoneFields() {
+        var exchanger = document.getElementById("exchanger").value;
+        var gcashFields = document.getElementById("gcashFields");
+
+        if (exchanger === "Gcash") {
+            gcashFields.style.display = "block";
+        } else {
+            gcashFields.style.display = "none";
+        }
+    }
+</script>
+
+<script>
+    function updateCharacterCount(textarea) {
+        var characterCount = textarea.value.length;
+        var characterLimit = 500;
+
+        if (characterCount > characterLimit) {
+            textarea.value = textarea.value.substring(0, characterLimit);
+            characterCount = characterLimit;
+        }
+
+        document.getElementById('character-count').innerText = characterCount + '/' + characterLimit + '';
+    }
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var exchangerSelect = document.getElementById("exchanger");
+        var coinSelect = document.getElementById("coin");
+        var qtyInput = document.getElementById("qty-of-coin");
+        var addressInput = document.getElementById("address");
+        var coinLabel = document.querySelector("label[for='coin']");
+        var qtyLabel = document.querySelector("label[for='qty-of-coin']");
+        var addressLabel = document.querySelector("label[for='address']");
+
+        exchangerSelect.addEventListener("change", function () {
+            var selectedExchanger = exchangerSelect.value;
+
+            // Check if PayPal is selected
+            if (selectedExchanger === "PayPal" || selectedExchanger === 'Gcash') {
+                // Disable coinSelect, qtyInput, and addressInput
+                coinSelect.disabled = true;
+                qtyInput.setAttribute("readonly", "readonly");
+                addressInput.setAttribute("readonly", "readonly");
+
+                // Update labels
+                coinLabel.textContent = "Coin (Not needed)";
+                qtyLabel.textContent = "Quantity of Coin (Not needed)";
+                addressLabel.textContent = "Receiver Address (Not needed)";
+            } else {
+                // Enable coinSelect, and remove readonly attribute from qtyInput and addressInput
+                coinSelect.disabled = false;
+                qtyInput.removeAttribute("readonly");
+                addressInput.removeAttribute("readonly");
+
+                // Reset labels
+                coinLabel.textContent = "Select coin";
+                qtyLabel.textContent = "Quantity of Coin";
+                addressLabel.textContent = "Receiver Address";
+            }
+        });
+    });
+</script>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let exchangerSelect = document.getElementById('exchanger');
+        let senderLabel = document.querySelector('label[for="sender"]');
+        let senderInput = document.getElementById('sender');
+
+        exchangerSelect.addEventListener('change', function() {
+            if (exchangerSelect.value === 'AltCoinTrader') {
+                senderLabel.style.display = 'none';
+                senderInput.style.display = 'none';
+            } else {
+                senderLabel.style.display = 'block';
+                senderInput.style.display = 'block';
+            }
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const exchanger = document.getElementById('exchanger');
+        const receiverNameBlock = document.getElementById('receiverNameBlock');
+        const nameLabel = document.querySelector('label[for="name"]');
+        const nameInput = document.getElementById('name');
+        const senderLabel = document.querySelector('label[for="sender"]');
+        const senderInput = document.getElementById('sender');
+
+        exchanger.addEventListener('change', function () {
+            const selectedExchanger = exchanger.value;
+            if (selectedExchanger === 'AltCoinTrader') {
+                receiverNameBlock.style.display = 'block';
+                nameLabel.style.display = 'block';
+                nameInput.style.display = 'block';
+                senderLabel.style.display = 'none';
+                senderInput.style.display = 'none';
+            } else if (selectedExchanger === 'Luno' || selectedExchanger === 'VARL' || selectedExchanger === 'PayPal' || selectedExchanger === 'Gcash') {
+                receiverNameBlock.style.display = 'block';
+                nameLabel.style.display = 'block';
+                nameInput.style.display = 'block';
+                senderLabel.style.display = 'block';
+                senderInput.style.display = 'block';
+            } else {
+                receiverNameBlock.style.display = 'none';
+                nameLabel.style.display = 'none';
+                nameInput.style.display = 'none';
+                senderLabel.style.display = 'block';
+                senderInput.style.display = 'block';
+            }
+        });
+
+        // Trigger the change event on page load to ensure initial visibility
+        const initialExchanger = exchanger.value;
+        if (initialExchanger === 'AltCoinTrader') {
+            receiverNameBlock.style.display = 'block';
+            nameLabel.style.display = 'block';
+            nameInput.style.display = 'block';
+            senderLabel.style.display = 'none';
+            senderInput.style.display = 'none';
+        } else if (initialExchanger === 'Luno' || initialExchanger === 'VARL' || initialExchanger === 'Gcash') {
+            receiverNameBlock.style.display = 'block';
+            nameLabel.style.display = 'block';
+            nameInput.style.display = 'block';
+            senderLabel.style.display = 'block';
+            senderInput.style.display = 'block';
+        } else {
+            receiverNameBlock.style.display = 'none';
+            nameLabel.style.display = 'none';
+            nameInput.style.display = 'none';
+            senderLabel.style.display = 'block';
+            senderInput.style.display = 'block';
+        }
+    });
+</script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const exchanger = document.getElementById('exchanger');
+        const senderNameBlock = document.getElementById('senderNameBlock');
+        const senderLabel = document.querySelector('label[for="senderName"]');
+        const senderInput = document.getElementById('senderName');
+
+        exchanger.addEventListener('change', function () {
+            const selectedExchanger = exchanger.value;
+            if (selectedExchanger === 'Luno' || selectedExchanger === 'VARL' || selectedExchanger === 'PayPal' || selectedExchanger === 'Gcash') {
+                senderNameBlock.style.display = 'block';
+                senderLabel.style.display = 'block';
+                senderInput.style.display = 'block';
+            } else {
+                senderNameBlock.style.display = 'none';
+                senderLabel.style.display = 'none';
+                senderInput.style.display = 'none';
+            }
+        });
+
+        // Trigger the change event on page load to ensure initial visibility
+        const initialExchanger = exchanger.value;
+        if (initialExchanger === 'Luno' || initialExchanger === 'VARL' || initialExchanger === 'Gcash') {
+            senderNameBlock.style.display = 'block';
+            senderLabel.style.display = 'block';
+            senderInput.style.display = 'block';
+        } else {
+            senderNameBlock.style.display = 'none';
+            senderLabel.style.display = 'none';
+            senderInput.style.display = 'none';
+        }
+    });
+</script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const exchanger = document.getElementById('exchanger');
+        const feeBlock = document.getElementById('feeBlock');
+        const feeLabel = document.querySelector('label[for="fee"]');
+        const feeInput = document.getElementById('fee');
+
+        exchanger.addEventListener('change', function () {
+            const selectedExchanger = exchanger.value;
+            if (selectedExchanger === 'Luno' || selectedExchanger === 'VARL' || selectedExchanger === 'PayPal') {
+                feeBlock.style.display = 'block';
+                feeLabel.style.display = 'block';
+                feeInput.style.display = 'block';
+            } else {
+                feeBlock.style.display = 'none';
+                feeLabel.style.display = 'none';
+                feeInput.style.display = 'none';
+            }
+        });
+
+        // Trigger the change event on page load to ensure initial visibility
+        const initialExchanger = exchanger.value;
+        if (initialExchanger === 'Luno' || initialExchanger === 'VARL') {
+            feeBlock.style.display = 'block';
+            feeLabel.style.display = 'block';
+            feeInput.style.display = 'block';
+        } else {
+            feeBlock.style.display = 'none';
+            feeLabel.style.display = 'none';
+            feeInput.style.display = 'none';
+        }
+    });
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const receiverInput = document.getElementById('receiver');
+    const senderInput = document.getElementById('sender');
+    const modal = document.getElementById('emailModal');
+    const closeButton = document.querySelector('.close');
+    const redirectButton = document.getElementById('redirectBtn');
+
+    closeButton.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    function getEmailDomain(email) {
+        return email.substring(email.lastIndexOf("@") + 1).toLowerCase();
+    }
+
+    function validateEmailDomains() {
+        const receiverDomain = getEmailDomain(receiverInput.value);
+        const senderDomain = getEmailDomain(senderInput.value);
+
+        if (receiverDomain && senderDomain && receiverDomain === senderDomain) {
+            modal.style.display = "block";
+        }
+    }
+
+    receiverInput.addEventListener('input', validateEmailDomains);
+    senderInput.addEventListener('input', validateEmailDomains);
+});
+</script>
+
+
+
+
+</body></html>
